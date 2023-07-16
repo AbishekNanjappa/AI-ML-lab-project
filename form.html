@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cardiovascular Disease Prediction</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Cardio Disease Prediction</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="form.html">Form</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Cardiovascular Disease Prediction</h2>
+        <form id="prediction-form">
+            <div class="form-group">
+                <label for="age">Age (in years):</label>
+                <input type="number" id="age" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" class="form-control" required>
+                    <option value="1">Female</option>
+                    <option value="2">Male</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="height">Height (in cm):</label>
+                <input type="number" id="height" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="weight">Weight (in kg):</label>
+                <input type="number" id="weight" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="ap_hi">Systolic Blood Pressure (mmHg):</label>
+                <input type="number" id="ap_hi" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="ap_lo">Diastolic Blood Pressure (mmHg):</label>
+                <input type="number" id="ap_lo" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="cholesterol">Cholesterol:</label>
+                <select id="cholesterol" class="form-control" required>
+                    <option value="1">Normal</option>
+                    <option value="2">Above Normal</option>
+                    <option value="3">Well Above Normal</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="gluc">Glucose:</label>
+                <select id="gluc" class="form-control" required>
+                    <option value="1">Normal</option>
+                    <option value="2">Above Normal</option>
+                    <option value="3">Well Above Normal</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="smoke">Smoking:</label>
+                <select id="smoke" class="form-control" required>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="alco">Alcohol Consumption:</label>
+                <select id="alco" class="form-control" required>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="active">Physical Activity:</label>
+                <select id="active" class="form-control" required>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Predict</button>
+            </div>
+        </form>
+        <div id="prediction-result" style="display: none;">
+            <h3>Prediction Result:</h3>
+            <p id="result-text"></p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

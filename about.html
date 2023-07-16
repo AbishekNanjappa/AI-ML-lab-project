@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About - Cardiovascular Disease Prediction</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Cardio Disease Prediction</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="form.html">Form</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5 text-white">
+        <h2>About Cardiovascular Disease Prediction</h2>
+        <p>Welcome to our website that predicts the risk of cardiovascular disease based on various factors. We have developed a machine learning model using the Gradient Boosting Classifier algorithm to predict the presence or absence of cardiovascular disease.</p>
+        
+        <h3>Data Set</h3>
+        <p>The model has been trained on a dataset containing information about various individuals. Here is a portion of the dataset:</p>
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Height</th>
+                    <th>Weight</th>
+                    <th>Cholesterol</th>
+                    <th>Glucose</th>
+                    <th>Smoking</th>
+                    <th>Alcohol</th>
+                    <th>Physical Activity</th>
+                    <th>Cardiovascular Disease</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>50</td>
+                    <td>2</td>
+                    <td>168</td>
+                    <td>62</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>55</td>
+                    <td>1</td>
+                    <td>156</td>
+                    <td>85</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>52</td>
+                    <td>1</td>
+                    <td>160</td>
+                    <td>56</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <!-- Add more rows here -->
+            </tbody>
+        </table>
+
+        <p>Our model analyzes the provided information, such as age, gender, height, weight, blood pressure, cholesterol level, glucose level, smoking status, alcohol consumption, and physical activity, to predict the likelihood of cardiovascular disease. The prediction is based on a Gradient Boosting Classifier model trained on this dataset.</p>
+        <p>By using this prediction model, individuals can gain insights into their potential risk of developing cardiovascular disease and take proactive measures for prevention and better health management.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

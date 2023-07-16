@@ -1,0 +1,46 @@
+body {
+    background-color: #1a2232;
+    color: #fff;
+}
+
+.navbar {
+    background-color: #030c17;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.container {
+    background-color: #0f1620;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.form-group label {
+    color: #fff;
+}
+
+.form-group input,
+.form-group select {
+    background-color: #1a2232;
+    color: #fff;
+}
+
+.form-group button {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+#prediction-result {
+    background-color: #0f1620;
+}
+
+#result-text {
+    color: #fff;
+}
